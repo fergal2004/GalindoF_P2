@@ -1,26 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Galindo_P2.ChistesPage"
-             Title="Chistes">
+             Title="Chistes"
+             BackgroundColor="#F2E6EE">
     <AbsoluteLayout>
-        <StackLayout AbsoluteLayout.LayoutFlags="All"
-                     AbsoluteLayout.LayoutBounds="0,0,1,1"
-                     VerticalOptions="CenterAndExpand"
-                     HorizontalOptions="CenterAndExpand"
-                     Padding="20">
-            <Label x:Name="JokeLabel"
-                   Text="Cargando chiste..."
-                   FontSize="Medium"
-                   HorizontalOptions="Center"
-                   VerticalOptions="CenterAndExpand"
-                   HorizontalTextAlignment="Center" />
-        </StackLayout>
-
+        <Label 
+            x:Name="ChisteLabel"
+            Text="Cargando chiste..."
+            FontSize="25"
+            TextColor="#010030"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"
+            AbsoluteLayout.LayoutBounds="0.5, 0.5, 0.9, 0.6"
+            AbsoluteLayout.LayoutFlags="All" />
+        
         <Button Text="Otro chiste"
-                AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
-                AbsoluteLayout.LayoutBounds="0.5, 0.95, 0.9, 50"
-                Clicked="OnOtroChisteClicked"
-                BackgroundColor="Blue"
-                TextColor="White" />
+                AbsoluteLayout.LayoutBounds="0.5, 1, 1, 50"
+                AbsoluteLayout.LayoutFlags="WidthProportional, PositionProportional"
+                BackgroundColor="#010030"
+                TextColor="White"
+                CornerRadius="10"
+                Clicked="OtroChisteButton"/>
+
     </AbsoluteLayout>
 </ContentPage>

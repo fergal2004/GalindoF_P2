@@ -1,50 +1,51 @@
-using System.Net.Http;
-using System.Text.Json;
-using Microsoft.Maui.Controls;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net.Http.Json;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Galindo_P2;
 
 public partial class ChistesPage : ContentPage
 {
+    HttpClient httpClient = new();
     public ChistesPage()
     {
         InitializeComponent();
-        CargarChiste();
+        _ = ObtenerChisteAsync();
     }
 
-    private async void CargarChiste()
+    private async Task ObtenerChisteAsync()
     {
         try
         {
-            using HttpClient client = new();
-            string url = "https://official-joke-api.appspot.com/random_joke";
-            var response = await client.GetStringAsync(url);
+            var url = "https://official-joke-api.appspot.com/random_joke";
+            var chiste = await httpClient.GetFromJsonAsync<Joke>(url);
 
-            var joke = JsonSerializer.Deserialize<Joke>(response);
-            if (joke != null)
+            if (chiste != null)
             {
-                JokeLabel.Text = $"{joke.setup}\n\n{joke.punchline}";
+                ChisteLabel.Text = $"{chiste.Setup}\n\n{chiste.Punchline}";
             }
             else
             {
-                JokeLabel.Text = "No se pudo cargar el chiste.";
+                ChisteLabel.Text = "No se pudo cargar el chiste.";
             }
         }
         catch (Exception ex)
         {
-            JokeLabel.Text = $"Error: {ex.Message}";
+            ChisteLabel.Text = $"Error al obtener chiste:\n{ex.Message}";
         }
     }
 
-    private void OnOtroChisteClicked(object sender, EventArgs e)
+    private async void OtroChisteButton(object sender, EventArgs e)
     {
-        CargarChiste();
+        await ObtenerChisteAsync();
     }
-}
-
-public class Joke
-{
-    public string type { get; set; }
-    public string setup { get; set; }
-    public string punchline { get; set; }
+    public class Joke
+    {
+        public string Type { get; set; }
+        public string Setup { get; set; }
+        public string Punchline { get; set; } 
+    }
 }
