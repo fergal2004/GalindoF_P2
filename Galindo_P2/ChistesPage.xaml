@@ -19,7 +19,7 @@
         <Button Text="Otro chiste"
                 AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
                 AbsoluteLayout.LayoutBounds="0.5, 0.95, 0.9, 50"
-                Clicked="OnOtroChisteButtonClicked"
+                Clicked="OnOtroChisteClicked"
                 BackgroundColor="Blue"
                 TextColor="White" />
     </AbsoluteLayout>

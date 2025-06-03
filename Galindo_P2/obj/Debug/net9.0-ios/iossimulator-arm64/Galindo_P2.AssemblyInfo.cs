@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Galindo_P2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+b615062e9d5e96105362698c4b2b79ce983770e0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+8dfda8228f2d8d41f855a1330aaa845c3b1bc7ec")]
 [assembly: System.Reflection.AssemblyProductAttribute("Galindo_P2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Galindo_P2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
