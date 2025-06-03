@@ -10,21 +10,21 @@
         <Frame Grid.Row="0" Grid.Column="0" BorderColor="Black" Padding="10">
             <StackLayout>
                 <Label Text="Nombre:" FontSize="Medium" FontAttributes="Bold" />
-                <Label Text="Santiago Córdova" FontSize="Medium" />
+                <Label Text="Fernando Galindo" FontSize="Medium" />
             </StackLayout>
         </Frame>
 
         <Frame Grid.Row="0" Grid.Column="1" BorderColor="Black" Padding="10">
             <StackLayout>
                 <Label Text="Fecha:" FontSize="Medium" FontAttributes="Bold" />
-                <Label Text="02/06/2025" FontSize="Medium" />
+                <Label Text="03/06/2025" FontSize="Medium" />
             </StackLayout>
         </Frame>
 
         <Frame Grid.Row="1" Grid.Column="0" BorderColor="Black" Padding="10">
             <StackLayout>
                 <Label Text="Intereses:" FontSize="Medium" FontAttributes="Bold" />
-                <Label Text="Tecnología" FontSize="Medium" />
+                <Label Text="Futbol y musica" FontSize="Medium" />
             </StackLayout>
         </Frame>
 
