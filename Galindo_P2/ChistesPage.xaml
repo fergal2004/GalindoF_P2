@@ -1,0 +1,26 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Galindo_P2.ChistesPage"
+             Title="Chistes">
+    <AbsoluteLayout>
+        <StackLayout AbsoluteLayout.LayoutFlags="All"
+                     AbsoluteLayout.LayoutBounds="0,0,1,1"
+                     VerticalOptions="CenterAndExpand"
+                     HorizontalOptions="CenterAndExpand"
+                     Padding="20">
+            <Label x:Name="JokeLabel"
+                   Text="Cargando chiste..."
+                   FontSize="Medium"
+                   HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalTextAlignment="Center" />
+        </StackLayout>
+
+        <Button Text="Otro chiste"
+                AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
+                AbsoluteLayout.LayoutBounds="0.5, 0.95, 0.9, 50"
+                Clicked="OnOtroChisteButtonClicked"
+                BackgroundColor="Blue"
+                TextColor="White" />
+    </AbsoluteLayout>
+</ContentPage>

@@ -1,0 +1,38 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Galindo_P2.AboutPage"
+             Title="About">
+    <Grid RowDefinitions="*,*" ColumnDefinitions="*,*"
+          Padding="20"
+          RowSpacing="10"
+          ColumnSpacing="10">
+
+        <Frame Grid.Row="0" Grid.Column="0" BorderColor="Black" Padding="10">
+            <StackLayout>
+                <Label Text="Nombre:" FontSize="Medium" FontAttributes="Bold" />
+                <Label Text="Santiago Córdova" FontSize="Medium" />
+            </StackLayout>
+        </Frame>
+
+        <Frame Grid.Row="0" Grid.Column="1" BorderColor="Black" Padding="10">
+            <StackLayout>
+                <Label Text="Fecha:" FontSize="Medium" FontAttributes="Bold" />
+                <Label Text="02/06/2025" FontSize="Medium" />
+            </StackLayout>
+        </Frame>
+
+        <Frame Grid.Row="1" Grid.Column="0" BorderColor="Black" Padding="10">
+            <StackLayout>
+                <Label Text="Intereses:" FontSize="Medium" FontAttributes="Bold" />
+                <Label Text="Tecnología" FontSize="Medium" />
+            </StackLayout>
+        </Frame>
+
+        <Frame Grid.Row="1" Grid.Column="1" BorderColor="Black" Padding="10">
+            <StackLayout>
+                <Label Text="Versión:" FontSize="Medium" FontAttributes="Bold" />
+                <Label Text="1.0" FontSize="Medium" />
+            </StackLayout>
+        </Frame>
+    </Grid>
+</ContentPage>

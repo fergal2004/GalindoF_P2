@@ -1,23 +1,20 @@
-﻿namespace Galindo_P2;
-
-public partial class MainPage : ContentPage
+﻿namespace Galindo_P2
 {
-    int count = 0;
-
-    public MainPage()
+    public partial class MainPage : ContentPage
     {
-        InitializeComponent();
-    }
+        public MainPage()
+        {
+            InitializeComponent();
+        }
 
-    private void OnCounterClicked(object? sender, EventArgs e)
-    {
-        count++;
+        private async void OnChistesButtonClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ChistesPage());
+        }
 
-        if (count == 1)
-            CounterBtn.Text = $"Clicked {count} time";
-        else
-            CounterBtn.Text = $"Clicked {count} times";
-
-        SemanticScreenReader.Announce(CounterBtn.Text);
+        private async void OnAboutButtonClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new AboutPage());
+        }
     }
 }
