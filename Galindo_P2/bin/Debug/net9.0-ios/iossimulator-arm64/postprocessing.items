@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <_PostProcessingItem Include="Galindo_P2.app/Galindo_P2">
+      <IsAppExtension>false</IsAppExtension>
+      <BCSymbolMapName>Galindo_P2.bcsymbolmap</BCSymbolMapName>
+      <NoDSymUtil>true</NoDSymUtil>
+      <dSYMSourcePathExists>false</dSYMSourcePathExists>
+      <NoSymbolStrip>true</NoSymbolStrip>
+      <dSYMInfoPlistRelativePath>Galindo_P2.app.dSYM\Contents\Info.plist</dSYMInfoPlistRelativePath>
+      <SymbolFile>/Users/fernangal2004/Desktop/Programacion_IV_Galindo_Fernando/Galindo_P2/Galindo_P2/obj/Debug/net9.0-ios/iossimulator-arm64/mtouch-symbols.list</SymbolFile>
+      <DSymName>Galindo_P2.app.dSYM</DSymName>
+      <SourceProjectPath>/Users/fernangal2004/Desktop/Programacion_IV_Galindo_Fernando/Galindo_P2/Galindo_P2</SourceProjectPath>
+      <IsXPCService></IsXPCService>
+    </_PostProcessingItem>
+  </ItemGroup>
+</Project>
